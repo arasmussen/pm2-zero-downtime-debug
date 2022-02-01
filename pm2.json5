@@ -1,0 +1,12 @@
+{
+  apps: [{
+    name: 'child',
+    script: '/Users/andrew/zero-downtime/child.js',
+    exec_mode: 'cluster',
+    instances: 2,
+    node_args: '--max-http-header-size=16384',
+    listen_timeout: 60000,
+    kill_timeout: 30000,
+    wait_ready: true,
+  }],
+}
